@@ -1,1 +1,20 @@
 ng serve to start
+
+update BE code -- done
+deploy to lambda -- done
+test it on lambda -- done
+update FE code -- done
+deploy on s3 -- done 
+update FE code to call lambda function -- done
+once all works create tf script for s3,lambda
+run tf to create all resources and test end to end
+error handling
+
+note:
+in lambda upload archive.zip only
+lambda handler in code tab server.handler
+timeout=in configuration tab 5mins
+make lambda url public or with IAM
+in FE code update apiurl after creating lambda and run ng build again
+Node.js 18.x
+in s3 upload dist folder and all files in browser folder parallel to dist folder

@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AppComponent {
   title = 'project-management-frontend';
   description: string = '';
-  apiUrl: string = 'http://localhost:3000';
+  apiUrl: string = 'https://45uwsmdkr5b3btw4fy45wiyli40oagod.lambda-url.us-east-1.on.aws';
   responseData: string = ''; // Response data will be displayed here
   loading: boolean = false;
 
