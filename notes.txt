@@ -15,6 +15,23 @@ in lambda upload archive.zip only
 lambda handler in code tab server.handler
 timeout=in configuration tab 5mins
 make lambda url public or with IAM
-in FE code update apiurl after creating lambda and run ng build again
 Node.js 18.x
+in FE code update apiurl after creating lambda and run ng build again
 in s3 upload dist folder and all files in browser folder parallel to dist folder
+
+---
+terraform must be installed
+generate new openapikey
+update be openapikey env var value
+tfststae for FE and BE must exist and aws profile must exist
+run tf for FE and get s3 url, update this url in BE for cors
+archive zip file must be present at mentioned path
+run tf for BE get lambda fn URL, update this URL in FE
+Fe build create using ng build- ng build --configuration production
+aws s3 sync to upload files and folder:
+aws s3 sync /Users/pragyabharti/Documents/BITS_Assignments/sem4/outline/Implementation/project-management-frontend/dist/project-management-frontend/browser s3://projectmanagementfecall/
+aws s3 sync dist s3://projectmanagementfecall/dist
+**after destroying and recreating infra ensure that new lambda function url is updated in FE code and build is run and new build is uploaded in s3
+
+
+

@@ -65,4 +65,15 @@ button:disabled {
   color: #666666;
   cursor: not-allowed;
 }
+.alert {
+    padding: 10px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-top: 15px;
+}
+
+.alert-danger {
+    background-color: #e57373; /* Lighter red */
+}
+
 
